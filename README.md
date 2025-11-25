@@ -67,7 +67,7 @@ Assumindo o projeto clonado em `~/workspace/radar`:
 cd ~/workspace/radar
 
 # Build para a plataforma mps2/an385
-west build -b mps2/an385 . -d build
+west build -b mps2_an385 . -d build
 ```
 
 Se o build terminar sem erro, para executar no QEMU:
@@ -147,7 +147,7 @@ Essas opções podem ser alteradas via:
 
 ```bash
 cd ~/workspace/radar
-west build -b mps2/an385 . -d build -t menuconfig
+west build -b mps2_an385 . -d build -t menuconfig
 ```
 
 ---
