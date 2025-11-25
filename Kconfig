@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: Apache-2.0
+source "Kconfig.zephyr"
+
+menu "Radar configuration"
+
+config RADAR_SENSOR_DISTANCE_MM
+    int "Distância entre os sensores (mm)"
+    default 2000
+    help
+      Distância física entre os dois sensores magnéticos simulados.
+
+config RADAR_SPEED_LIMIT_LIGHT_KMH
+    int "Limite de velocidade para veículos leves (km/h)"
+    default 80
+
+config RADAR_SPEED_LIMIT_HEAVY_KMH
+    int "Limite de velocidade para veículos pesados (km/h)"
+    default 60
+
+config RADAR_WARNING_THRESHOLD_PERCENT
+    int "Percentual para zona de alerta (cor amarela)"
+    default 90
+    range 50 100
+
+config RADAR_CAMERA_FAILURE_RATE_PERCENT
+    int "Taxa de falha simulada da câmera (0-100 %)"
+    default 20
+    range 0 100
+
+endmenu

@@ -1,0 +1,4 @@
+west:
+  command: /home/mariaantonia/.local/bin/west build -b mps2/an385 . -d build
+  topdir: /home/mariaantonia/zephyrproject
+  version: 1.5.0

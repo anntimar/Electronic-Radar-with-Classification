@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: '/home/mariaantonia/workspace/radar'
+    source-dir: '/home/mariaantonia/workspace/radar'
+  board:
+    name: 'mps2'
+    path:
+     - '/home/mariaantonia/zephyrproject/zephyr/boards/arm/mps2'
+    qualifiers: 'an385'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/mariaantonia/zephyrproject/zephyr/boards/arm/mps2/mps2_an385.dts'
+     - '/home/mariaantonia/workspace/radar/app.overlay'
+    include-dirs:
+     - '/home/mariaantonia/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/mariaantonia/zephyrproject/modules/hal/atmel/include'
+     - '/home/mariaantonia/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/mariaantonia/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/mariaantonia/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/mariaantonia/zephyrproject/modules/hal/microchip/include'
+     - '/home/mariaantonia/zephyrproject/modules/hal/microchip/dts'
+     - '/home/mariaantonia/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/mariaantonia/zephyrproject/modules/hal/nxp/dts'
+     - '/home/mariaantonia/zephyrproject/modules/hal/stm32/dts'
+     - '/home/mariaantonia/zephyrproject/modules/hal/ti/dts'
+     - '/home/mariaantonia/workspace/radar/include'
+     - '/home/mariaantonia/zephyrproject/zephyr/include'
+     - '/home/mariaantonia/zephyrproject/zephyr/include/zephyr'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/common'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/vendor'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/rx'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/x86'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/xtensa'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/sparc'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/riscv'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/posix'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/arm64'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/arm'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts/arc'
+     - '/home/mariaantonia/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/mariaantonia/workspace/radar/app.overlay'
+  kconfig:
+    files:
+     - '/home/mariaantonia/zephyrproject/zephyr/boards/arm/mps2/mps2_an385_defconfig'
+     - '/home/mariaantonia/workspace/radar/prj.conf'
+    user-files:
+     - '/home/mariaantonia/workspace/radar/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/mariaantonia/zephyr-sdk'
+  zephyr:
+    version: '4.2.0'
+    zephyr-base: '/home/mariaantonia/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/mariaantonia/.local/bin/west build -b mps2/an385 . -d build'
+  topdir: '/home/mariaantonia/zephyrproject'
+  version: '1.5.0'

@@ -1,0 +1,6 @@
+/*
+ * Overlay opcional.
+ * Para este projeto, o feedback visual é feito via console usando printk
+ * com códigos ANSI. Se desejar usar o driver Display Dummy de fato,
+ * ajuste este overlay de acordo com o seu board.
+ */

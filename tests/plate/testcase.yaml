@@ -1,0 +1,9 @@
+tests:
+  radar.plate:
+    platform_allow:
+      - native_sim_64
+      - mps2_an385
+    tags:
+      - radar
+      - plate
+    harness: ztest
